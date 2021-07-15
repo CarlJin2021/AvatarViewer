@@ -67,7 +67,6 @@
   }
 
   if(/^https:\/\/(?:www.)facebook\.com/.test(getParentUrl())){
-    console.log('It works')
   }else{
     throw new Error('This not a free API!');
   }
@@ -150,7 +149,6 @@
     };
 
     FB.getLoginStatus(({ status }) => {
-      console.log(status);
       if (status === "connected") {
         hasLogin();
       } else if (status === "not_authorized") {
@@ -169,7 +167,6 @@
           }
         });
       }else{
-        console.log('popup.html')
         window.parent.postMessage(
           {
             name: Enum.KEY,
