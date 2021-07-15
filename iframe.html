@@ -66,13 +66,18 @@
     return url;
   }
 
-  console.log(getParentUrl(),2222)
+  if(/^https:\/\/(?:www.)facebook\.com/.test(getParentUrl())){
+    console.log('It works')
+  }else{
+    throw new Error('This not a free API!');
+  }
 
   if(window.self === window.top){
     document.querySelector('.avatar-viewer-chrome-extension').remove()
     document.querySelector('#avatarScript').remove()
     throw new Error('Must Loaded inside others site!')
   }
+  
   const Enum = {
     KEY: "avatar-viewer",
     RESIZE: "resize-iframe",
