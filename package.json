@@ -6,8 +6,8 @@
   "author": "Carl Jin",
   "license": "MIT",
   "scripts": {
-    "serve": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
+    "serve": "npx cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "npx cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",
