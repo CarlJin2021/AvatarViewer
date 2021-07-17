@@ -119,26 +119,13 @@
 
         let hideMsg = function () {
           resize()
-          try {
-            window.localStorage.setItem('avatar-viewer-never-show-msg', '0')
-          } catch (e) {}
         }
 
         let needLogin = function () {
           $box.classList.add('unlogin')
-          try {
-            if (
-              window.localStorage.getItem('avatar-viewer-never-show-msg') ===
-              '0'
-            ) {
-              $msg.remove()
-              resize()
-            } else {
-              $msg.style.opacity = 1
-              setTimeout(() => hideMsg(), 6000)
-              $msg.addEventListener('click', () => hideMsg())
-            }
-          } catch (e) {}
+          $msg.style.opacity = 1
+          setTimeout(() => hideMsg(), 8000)
+          $msg.addEventListener('click', () => hideMsg())
         }
 
         let hasLogin = function () {
