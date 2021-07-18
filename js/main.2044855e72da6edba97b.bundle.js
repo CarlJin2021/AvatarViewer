@@ -16,7 +16,7 @@ document.getElementById('bannerImage').src = bannerImage;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "img/16881601ba24c5d519f9.png";
+module.exports = __webpack_require__.p + "img/051d76e6f33baa6ac5b2.png";
 
 /***/ })
 
