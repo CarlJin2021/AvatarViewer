@@ -119,6 +119,9 @@
 
         let hideMsg = function () {
           resize()
+          if ($msg) {
+            $msg.remove()
+          }
         }
 
         let needLogin = function () {
